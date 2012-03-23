@@ -1,4 +1,5 @@
 <?php defined('C5_EXECUTE') or die('Access Denied');
+
 $form = loader::helper('form');
 if ($this->controller->getTask() == 'update' || $this->controller->getTask() == 'edit' || $this->controller->getTask() == 'add') {
 
@@ -27,7 +28,7 @@ if ($this->controller->getTask() == 'update' || $this->controller->getTask() == 
 	?>
 		<form method="post" action="<?=$this->action($task)?>" id="faq-form">
 			<div class="ccm-pane-body">
-					<fieldset>
+				<fieldset>
 					<?php
 						if ($this->controller->getTask() != 'add') {
 							echo $form->hidden('faqID', $faq->getCollectionID());
@@ -126,10 +127,12 @@ if ($this->controller->getTask() == 'update' || $this->controller->getTask() == 
 				asort($sections);
 			?>
 
-			<strong><?=$form->label('cParentID', t('Section'))?></strong>
-			<div>
-				<?=$form->select('cParentID', $sections, $cParentID)?>
-				<?=$form->submit('submit', 'Search')?>
+			<div class="clearfix">
+				<strong><?=$form->label('cParentID', t('Section'))?></strong>
+				<div class='input'>
+					<?=$form->select('cParentID', $sections, $cParentID)?>
+					<?=$form->submit('submit', 'Search')?>
+				</div>
 			</div>
 		</form>
 		<br/>
@@ -174,6 +177,6 @@ if ($this->controller->getTask() == 'update' || $this->controller->getTask() == 
 			}
 	?>
 	</div>
-
+	<div class='ccm-pane-footer'></div>
 <?php } ?>
 <?=Loader::helper('concrete/dashboard')->getDashboardPaneFooterWrapper(false)?>

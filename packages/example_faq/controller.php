@@ -17,7 +17,8 @@ class ExampleFaqPackage extends Package {
 	}
 
 	public function upgrade() {
-		$pkg = parent::upgrade();
+		parent::upgrade();
+		$pkg = package::getByHandle($this->pkgHandle);
 		Loader::model('single_page');
 
 		$p = SinglePage::getByPath('/dashboard/example_faq');
@@ -25,8 +26,8 @@ class ExampleFaqPackage extends Package {
 			$p->update(array('cName'=>t('Example FAQ')));
 		}
 
-		$p = SinglePage::add('dashboard/example_faq/faq_entries',$pkg);
-		if (is_object($p)) {
+		$p = SinglePage::add('/dashboard/example_faq/faq_entries',$pkg);
+		if (is_object($p) && $p->isError() !== false) {
 			$p->update(array('cName'=>t('FAQ Entries')));
 		}
 	}
@@ -41,12 +42,12 @@ class ExampleFaqPackage extends Package {
 		$cab2 = CollectionAttributeKey::add('SELECT',array('akHandle' => 'faq_tags', 'akName' => t('FAQ Tags'), 'akSelectAllowMultipleValues' => true, 'akSelectAllowOtherValues' => true, 'akIsSearchable' => true), $pkg);
 
 		$p = SinglePage::add('dashboard/example_faq',$pkg);
-		if (is_object($p)) {
+		if (is_object($p) && $p->isError() !== false) {
 			$p->update(array('cName'=>'Example FAQ', 'cDescription'=>'Frequently asked questions.'));
 		}
 
-		$p = SinglePage::add('dashboard/example_faq/faq_entries',$pkg);
-		if (is_object($p)) {
+		$p = SinglePage::add('/dashboard/example_faq/faq_entries',$pkg);
+		if (is_object($p) && $p->isError() !== false) {
 			$p->update(array('cName'=>'FAQ Entries'));
 		}
 

@@ -1,5 +1,6 @@
 <?php
 defined('C5_EXECUTE') or die(_("Access Denied."));
+
 class DashboardExampleFaqFaqEntriesController extends Controller {
 
 	public $helpers = array('html','form');
