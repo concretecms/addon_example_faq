@@ -6,7 +6,7 @@ class ExampleFaqPackage extends Package {
 
 	protected $pkgHandle = 'example_faq';
 	protected $appVersionRequired = '5.5.0';
-	protected $pkgVersion = '1.1.2';
+	protected $pkgVersion = '1.2.0';
 
 	public function getPackageDescription() {
 		return t('Adds a simple FAQ system to a website. Used in the Example FAQ Single Page How-To.');
@@ -20,14 +20,14 @@ class ExampleFaqPackage extends Package {
 		$pkg = parent::upgrade();
 		Loader::model('single_page');
 
-		$p = SinglePage::add('dashboard/example_faq',$pkg);
-		if (is_object($p)) {
-			$p->update(array('cName'=>'Example FAQ', 'cDescription'=>'Frequently asked questions.'));
+		$p = SinglePage::getByPath('/dashboard/example_faq');
+		if (is_object($p) && $p->isError() !== false) {
+			$p->update(array('cName'=>t('Example FAQ')));
 		}
 
 		$p = SinglePage::add('dashboard/example_faq/faq_entries',$pkg);
 		if (is_object($p)) {
-			$p->update(array('cName'=>'FAQ Entries'));
+			$p->update(array('cName'=>t('FAQ Entries')));
 		}
 	}
 
