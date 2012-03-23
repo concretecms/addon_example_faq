@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: example_faq 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-05 15:09+0100\n"
+"PO-Revision-Date: 2011-06-06 10:42+0100\n"
+"Last-Translator: Casper Meijerink <casper@missmarvels.nl>\n"
+"Language-Team: Concrete5 NL <casper@missmarvels.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: single_pages/dashboard/example_faq/view.php:6
+msgid "Add"
+msgstr "Toevoegen"
+
+#: single_pages/dashboard/example_faq/view.php:6
+msgid "Update"
+msgstr "Update"
+
+#: single_pages/dashboard/example_faq/view.php:21
+msgid "Update Entry"
+msgstr "Update Item"
+
+#: single_pages/dashboard/example_faq/view.php:24
+msgid "Add FAQ Entry"
+msgstr "FAQ regel toevoegen"
+
+#: single_pages/dashboard/example_faq/view.php:31
+#: single_pages/dashboard/example_faq/view.php:98
+msgid "FAQs"
+msgstr "FAQs"
+
+#: single_pages/dashboard/example_faq/view.php:41
+msgid "Question"
+msgstr "Vraag"
+
+#: single_pages/dashboard/example_faq/view.php:44
+msgid "Brief Answer"
+msgstr "Kort antwoord"
+
+#: single_pages/dashboard/example_faq/view.php:47
+#: single_pages/dashboard/example_faq/view.php:112
+msgid "Section"
+msgstr "Sectie"
+
+#: single_pages/dashboard/example_faq/view.php:49
+msgid "No sections defined. Please create a page with the attribute \"faq_entry\" set to true."
+msgstr "Geen secties aangegeven. Maak een pagina met de custom attribute \"faq_entry\" op ja."
+
+#: single_pages/dashboard/example_faq/view.php:55
+msgid "Page Type"
+msgstr "Pagina type"
+
+#: single_pages/dashboard/example_faq/view.php:58
+msgid "Date/Time"
+msgstr "Datum/Tijd"
+
+#: single_pages/dashboard/example_faq/view.php:61
+msgid "Full Answer"
+msgstr "Volledig antwoord"
+
+#: single_pages/dashboard/example_faq/view.php:86
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: single_pages/dashboard/example_faq/view.php:100
+msgid "New FAQ"
+msgstr "Nieuwe FAQ"
+
+#: single_pages/dashboard/example_faq/view.php:101
+msgid "Click here to add a new FAQ Entry &gt;"
+msgstr "Klik hier om een faqitem toe te voegen &gt;"
+
+#: single_pages/dashboard/example_faq/view.php:104
+msgid "View/Search FAQs"
+msgstr "Bekijk/Zoek FAQs"
+
+#: single_pages/dashboard/example_faq/view.php:126
+msgid "Name"
+msgstr "Naam"
+
+#: single_pages/dashboard/example_faq/view.php:127
+msgid "Date Added"
+msgstr "Datum toegevoegd"
+
+#: single_pages/dashboard/example_faq/view.php:128
+msgid "Public Date"
+msgstr "Publieke datum"
+
+#: single_pages/dashboard/example_faq/view.php:129
+msgid "Page Owner"
+msgstr "Pagina eigenaar"
+
+#: single_pages/dashboard/example_faq/view.php:144
+msgid "Edit"
+msgstr "Wijzigen"
+
+#: single_pages/dashboard/example_faq/view.php:153
+msgid "No FAQ entries found."
+msgstr "Geen faq-items gevonden."
+
+#: blocks/page_list/templates/example_faq_page_list/view.php:2
+#: controller.php:3
+#: controllers/dashboard/example_faq/controller.php:2
+msgid "Access Denied."
+msgstr "Toegang geweigerd"
+
+#: controller.php:12
+msgid "Adds a simple FAQ system to a website. Used in the Example FAQ Single Page How-To."
+msgstr "Voeg een simpel FAQ systeem toe aan de website. Gebruikt in: Example FAQ Single Page How-To."
+
+#: controller.php:16
+msgid "Example FAQ"
+msgstr "FAQ voorbeeld"
+
+#: controller.php:25
+msgid "FAQ Section"
+msgstr "FAQ sectie"
+
+#: controller.php:26
+msgid "FAQ Tags"
+msgstr "FAQ Tags"
+
+#: controllers/dashboard/example_faq/controller.php:104
+msgid "You must choose a parent page for this FAQ entry."
+msgstr "U dient een bovenliggende pagina te kiezen voor dit item."
+
+#: controllers/dashboard/example_faq/controller.php:108
+msgid "You must choose a page type for this FAQ entry."
+msgstr "U dient een paginatype te kiezen voor dit item."
+
+#: controllers/dashboard/example_faq/controller.php:112
+msgid "Title is required"
+msgstr "De titel is verplicht."
+
+#: controllers/dashboard/example_faq/controller.php:121
+msgid "You do not have permission to add a page of that type to that area of the site."
+msgstr "U heeft geen toegang om een pagina van dat type toe te voegen aan dat gedeelte van de site."
+
+#: controllers/dashboard/example_faq/controller.php:142
+msgid "FAQ added."
+msgstr "FAQ toegevoegd"
+
+#: controllers/dashboard/example_faq/controller.php:147
+msgid "FAQ updated."
+msgstr "FAQ geupdate."
+

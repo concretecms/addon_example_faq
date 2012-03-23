@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: example_faq 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-05 15:09+0100\n"
+"PO-Revision-Date: 2011-03-07 11:49+0100\n"
+"Last-Translator: cali <cali@concrete5.fr>\n"
+"Language-Team: Concrete5 FR <team@concrete5.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: single_pages/dashboard/example_faq/view.php:6
+msgid "Add"
+msgstr "Ajouter"
+
+#: single_pages/dashboard/example_faq/view.php:6
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: single_pages/dashboard/example_faq/view.php:21
+msgid "Update Entry"
+msgstr "Mettre l'entrée à jour"
+
+#: single_pages/dashboard/example_faq/view.php:24
+msgid "Add FAQ Entry"
+msgstr "Ajouter une entrée dans les FAQ"
+
+#: single_pages/dashboard/example_faq/view.php:31
+#: single_pages/dashboard/example_faq/view.php:98
+msgid "FAQs"
+msgstr "FAQs"
+
+#: single_pages/dashboard/example_faq/view.php:41
+msgid "Question"
+msgstr "Question"
+
+#: single_pages/dashboard/example_faq/view.php:44
+msgid "Brief Answer"
+msgstr "Résumé de la réponse"
+
+#: single_pages/dashboard/example_faq/view.php:47
+#: single_pages/dashboard/example_faq/view.php:112
+msgid "Section"
+msgstr "Section"
+
+#: single_pages/dashboard/example_faq/view.php:49
+msgid "No sections defined. Please create a page with the attribute \"faq_entry\" set to true."
+msgstr "Aucune section n'est définie. Veuillez créer une page avec l'attribut \"faq_section\" activé."
+
+#: single_pages/dashboard/example_faq/view.php:55
+msgid "Page Type"
+msgstr "Type de page"
+
+#: single_pages/dashboard/example_faq/view.php:58
+msgid "Date/Time"
+msgstr "Date/Heure"
+
+#: single_pages/dashboard/example_faq/view.php:61
+msgid "Full Answer"
+msgstr "Réponse complète"
+
+#: single_pages/dashboard/example_faq/view.php:86
+msgid "Cancel"
+msgstr "Annuler"
+
+#: single_pages/dashboard/example_faq/view.php:100
+msgid "New FAQ"
+msgstr "Nouvelle FAQ"
+
+#: single_pages/dashboard/example_faq/view.php:101
+msgid "Click here to add a new FAQ Entry &gt;"
+msgstr "Cliquez ici pour ajouter une entrée dans les FAQ &gt;"
+
+#: single_pages/dashboard/example_faq/view.php:104
+msgid "View/Search FAQs"
+msgstr "Voir/Chercher dans les FAQs"
+
+#: single_pages/dashboard/example_faq/view.php:126
+msgid "Name"
+msgstr "Nom"
+
+#: single_pages/dashboard/example_faq/view.php:127
+msgid "Date Added"
+msgstr "Date d'ajout"
+
+#: single_pages/dashboard/example_faq/view.php:128
+msgid "Public Date"
+msgstr "Date publique"
+
+#: single_pages/dashboard/example_faq/view.php:129
+msgid "Page Owner"
+msgstr "Propriétaire de la page"
+
+#: single_pages/dashboard/example_faq/view.php:144
+msgid "Edit"
+msgstr "Editer"
+
+#: single_pages/dashboard/example_faq/view.php:153
+msgid "No FAQ entries found."
+msgstr "aucune entrée trouvée dans les FAQs"
+
+#: blocks/page_list/templates/example_faq_page_list/view.php:2
+#: controller.php:3
+#: controllers/dashboard/example_faq/controller.php:2
+msgid "Access Denied."
+msgstr "Accès refusé."
+
+#: controller.php:12
+msgid "Adds a simple FAQ system to a website. Used in the Example FAQ Single Page How-To."
+msgstr "Ajouter un système de FAQ simple sur votre site. Utilisé dans le tuto d'exemple de simple page de FAQ."
+
+#: controller.php:16
+msgid "Example FAQ"
+msgstr "Exemple de FAQ"
+
+#: controller.php:25
+msgid "FAQ Section"
+msgstr "Section des FAQs"
+
+#: controller.php:26
+msgid "FAQ Tags"
+msgstr "Mots-clés de la FAQ"
+
+#: controllers/dashboard/example_faq/controller.php:104
+msgid "You must choose a parent page for this FAQ entry."
+msgstr "Vous devez choisir une page parente  pour cette entrée de FAQ."
+
+#: controllers/dashboard/example_faq/controller.php:108
+msgid "You must choose a page type for this FAQ entry."
+msgstr "Vous devez choisir un type de page pour cette entée de FAQ."
+
+#: controllers/dashboard/example_faq/controller.php:112
+msgid "Title is required"
+msgstr "Vous devez saisir un titre"
+
+#: controllers/dashboard/example_faq/controller.php:121
+msgid "You do not have permission to add a page of that type to that area of the site."
+msgstr "Vous n'avez pas la permission d'ajouter une page de ce type dans cette zone du site."
+
+#: controllers/dashboard/example_faq/controller.php:142
+msgid "FAQ added."
+msgstr "FAQ ajoutée."
+
+#: controllers/dashboard/example_faq/controller.php:147
+msgid "FAQ updated."
+msgstr "FAQ mise à jour."
+
