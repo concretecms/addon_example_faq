@@ -34,42 +34,42 @@ if ($this->controller->getTask() == 'update' || $this->controller->getTask() == 
 							echo $form->hidden('faqID', $faq->getCollectionID());
 						}
 					?>
-				<div class="clearfix">
-					<?=$form->label('faqTitle', t('Question'))?>
-					<div class="input">
-						<?=$form->text('faqTitle', $faqTitle, array('style' => 'width: 730px'))?>
+					<div class="clearfix">
+						<?=$form->label('faqTitle', t('Question'))?>
+						<div class="input">
+							<?=$form->text('faqTitle', $faqTitle, array('style' => 'width: 730px'))?>
+						</div>
 					</div>
-				</div>
-				<div class="clearfix">
-					<?=$form->label('faqDescription', t('Brief Answer'))?>
-					<div class="input">
-						<?=$form->textarea('faqDescription', $faqDescription, array('style' => 'width: 730px; height: 100px'))?>
+					<div class="clearfix">
+						<?=$form->label('faqDescription', t('Brief Answer'))?>
+						<div class="input">
+							<?=$form->textarea('faqDescription', $faqDescription, array('style' => 'width: 730px; height: 100px'))?>
+						</div>
 					</div>
-				</div>
-				<div class="clearfix">
-					<?=$form->label('cParentID', t('Section'))?>
-					<div class="input">
-						<?php
-							if (count($sections) == 0) {
-								echo "<div>".t('No sections defined. Please create a page with the attribute "faq_entry" set to true.')."</div>";
-							} else {
-								echo "<div>".$form->select('cParentID', $sections, $cParentID)."</div>";
-							}
-						?>
+					<div class="clearfix">
+						<?=$form->label('cParentID', t('Section'))?>
+						<div class="input">
+							<?php
+								if (count($sections) == 0) {
+									echo "<div>".t('No sections defined. Please create a page with the attribute "faq_entry" set to true.')."</div>";
+								} else {
+									echo "<div>".$form->select('cParentID', $sections, $cParentID)."</div>";
+								}
+							?>
+						</div>
 					</div>
-				</div>
-				<div class="clearfix">
-					<?=$form->label('ctID', t('Page Type'))?>
-					<div class="input">
-						<?=$form->select('ctID', $pageTypes, $ctID)?>
+					<div class="clearfix">
+						<?=$form->label('ctID', t('Page Type'))?>
+						<div class="input">
+							<?=$form->select('ctID', $pageTypes, $ctID)?>
+						</div>
 					</div>
-				</div>
-				<div class="clearfix">
-					<?=$form->label('faqDate', t('Date/Time'))?>
-					<div class="input">
-						<?=$df->datetime('faqDate', $faqDate)?>
+					<div class="clearfix">
+						<?=$form->label('faqDate', t('Date/Time'))?>
+						<div class="input">
+							<?=$df->datetime('faqDate', $faqDate)?>
+						</div>
 					</div>
-				</div>
 
 					<strong><?=t('Full Answer')?></strong>
 					<?php Loader::element('editor_init') ?>
@@ -97,8 +97,7 @@ if ($this->controller->getTask() == 'update' || $this->controller->getTask() == 
 
 					<br/>
 					<div class="ccm-spacer">&nbsp;</div>
-
-
+				</fieldset>
 			</div>
 			<div class='ccm-pane-footer'>
 				<?php
